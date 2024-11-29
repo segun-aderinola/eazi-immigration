@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZ Immigration | Immigration Made Easy & Affordable!</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav class="text-white">
+        <div class="container mx-auto flex items-center justify-between px-4 py-3">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <img src="./assets/images/logo.png" alt="logo" class="h-16 w-24" />
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="lg:hidden text-gray-400 focus:outline-none focus:text-white" type="button"
+                onclick="toggleMobileMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Navbar Links for Large Screens -->
+            <div class="hidden lg:flex items-center w-full justify-center" id="navbarNav">
+                <ul class="flex space-x-8">
+                    <li>
+                        <a href="#" class="text-gray-300 hover:text-white">Home</a>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" class="text-gray-300 hover:text-white flex items-center">
+                            Our Services
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <!-- Dropdown -->
+                        <ul class="absolute hidden group-hover:block bg-gray-800 text-gray-300 rounded shadow-lg mt-2">
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Visa Assistance</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Legal Consultation</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-700">Immigration Paperwork</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html" class="text-gray-300 hover:text-white">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-300 hover:text-white">Immigration Plans</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-300 hover:text-white">Resources</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-300 hover:text-white">DIY Kits</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Button -->
+            <a href="#"
+                class="px-6 py-2 border border-white text-black font-medium rounded bg-white hover:bg-black hover:text-white lg:inline-block hidden whitespace-nowrap">
+                Contact Us
+            </a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden" id="mobileMenu">
+            <ul class="flex flex-col space-y-4 px-4 py-3 bg-gray-900">
+                <li>
+                    <a href="#" class="block text-gray-300 hover:text-white">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="block text-gray-300 hover:text-white">Our Services</a>
+                </li>
+                <li>
+                    <a href="about.html" class="block text-gray-300 hover:text-white">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="block text-gray-300 hover:text-white">Immigration Plans</a>
+                </li>
+                <li>
+                    <a href="#" class="block text-gray-300 hover:text-white">Resources</a>
+                </li>
+                <li>
+                    <a href="#" class="block text-gray-300 hover:text-white">DIY Kits</a>
+                </li>
+                <li>
+                    <a href="#" class="block text-gray-300 hover:text-white">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <header class="bg-white">
+            <div class="py-10">
+                <div class="container mx-auto px-4">
+                    <!-- Row -->
+                    <div class="flex space-x-4">
+                        <!-- Left Column -->
+                        <div class="flex-1 p-6">
+                            <h1 class="text-4xl text-black font-semibold mb-4">EZ Immigration - About Us</h1>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="flex-1 p-6">
+                            <p class="text-black font-light">EZ Immigration was founded with a simple yet ambitious goal
+                                - to break barriers and make US immigration more accessible and less frustrating for
+                                everyone involved. We are proud to have achieved great success in this.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+    </section>
+
+    <section class="bg-white text-black">
+        <div class="relative">
+            <img src="./assets/images/consultation.png" alt="Immigration Family"
+                class="w-full h-[300px] object-cover" />
+        </div>
+        <div class="container mx-auto px-2 max-w-10xl mt-10 pb-20 font-light">
+            <div class="mb-12 pr-0">
+                <h5 class="text-sm tracking-wider">What We Do.</h5>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+                    <div class="service-item pt-6">
+                        <h1 class="text-2xl text-black font-semibold mb-4">Our services are designed in a way that
+                            caters to the specific needs and requirements of each client without breaking the bank.
+                        </h1>
+                    </div>
+                    <div class="service-item pt-6">
+                        <p class="text-black font-light">You can choose to only have your immigration forms completed or
+                            reviewed without having to pay for additional services such as attorney consultations.
+                            Similarly, you can opt for our DIY guides and resources if you feel confident in
+                            representing yourself in certain immigration matters.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="service-item">
+                    <h5 class="font-bold text-lg mb-2">Meticulous immigration paperwork preparation and review</h5>
+                    <p class="text-gray-600">
+                        Our services are designed in a way that caters to the specific needs and requirements of each
+                        client without breaking the bank.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h5 class="font-bold text-lg mb-2">Customized immigration strategy</h5>
+                    <p class="text-gray-600">
+                        Our services are designed in a way that caters to the specific needs and requirements of each
+                        client without breaking the bank.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h5 class="font-bold text-lg mb-2">Interview Preparation</h5>
+                    <p class="text-gray-600">
+                        Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and
+                        in the loop.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h5 class="font-bold text-lg mb-2">Immigration attorney representation</h5>
+                    <p class="text-gray-600">
+                        Our services are designed in a way that caters to the specific needs and requirements of each
+                        client without breaking the bank.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h5 class="font-bold text-lg mb-2">Expert legal advice on immigration matters</h5>
+                    <p class="text-gray-600">
+                        Our services are designed in a way that caters to the specific needs and requirements of each
+                        client without breaking the bank.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h5 class="font-bold text-lg mb-2">In-person and virtual immigration lawyer consultation services
+                    </h5>
+                    <p class="text-gray-600">
+                        Our services are designed in a way that caters to the specific needs and requirements of each
+                        client without breaking the bank.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-black text-white py-12 px-6">
+        <div class="container mx-auto">
+            <!-- Heading Section -->
+            <div class="text-center lg:text-left mb-12 lg:pr-16">
+                <h5 class="text-yellow-400 text-sm tracking-wider font-medium mb-2">How It Works.</h5>
+                <h2 class="text-3xl lg:text-4xl font-bold lg:max-w-3xl">
+                    Our step-by-step guides provide all the necessary information, resources, <br> and tips to help you
+                    successfully navigate through your case.
+                </h2>
+                <p class="text-lg text-gray-300 mt-4 lg:max-w-3xl">
+                    You can also hire our immigration attorneys for a consultation or review of your DIY application to
+                    ensure its accuracy and increase the chances of approval.
+                </p>
+            </div>
+
+
+            <div class="flex flex-col lg:flex-row items-start gap-12">
+                <!-- Steps Section -->
+                <div class="flex-1">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Step 1 -->
+                        <div class="flex flex-col items-start space-y-4">
+                            <div
+                                class="w-10 h-10 flex items-center justify-center bg-yellow-400 text-black font-bold rounded-full">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold">Follow our step-by-step instructions</h4>
+                                <p class="text-gray-300 mt-2">
+                                    With our easy-to-follow instructions, you can easily navigate through the entire
+                                    application process without any confusion or stress.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="flex flex-col items-start space-y-4">
+                            <div
+                                class="w-10 h-10 flex items-center justify-center bg-yellow-400 text-black font-bold rounded-full">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold">Choose your immigration category</h4>
+                                <p class="text-gray-300 mt-2">
+                                    Whether you're looking to sponsor a family member, apply for a work visa, or become
+                                    a permanent resident, our guides cover a wide range of immigration categories.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flex flex-col items-start space-y-4">
+                            <div
+                                class="w-10 h-10 flex items-center justify-center bg-yellow-400 text-black font-bold rounded-full">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold">Collect all your supporting documents</h4>
+                                <p class="text-gray-300 mt-2">
+                                    EZ Immigration guides provide a detailed list of required documents and tips on how
+                                    to gather them efficiently.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="flex flex-col items-start space-y-4">
+                            <div
+                                class="w-10 h-10 flex items-center justify-center bg-yellow-400 text-black font-bold rounded-full">
+                                4
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold">Print, sign, and submit your application</h4>
+                                <p class="text-gray-300 mt-2">
+                                    Once you've completed all the steps, simply print out your application, sign it, and
+                                    submit it to the appropriate government agency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Section -->
+                <div class="flex-2">
+                    <img src="./assets/images/immigration-guide.png" alt="Immigration Guide"
+                        class="rounded-lg object-contain shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 bg-white">
+        <div class="container mx-auto flex flex-col lg:flex-row items-start gap-12">
+            <!-- Left Section: Image with Badge -->
+            <div class="relative w-full max-w-md mx-auto">
+                <!-- Main Image -->
+                <img src="./assets/images/immigration-officer.png" alt="Main Image"
+                    class="rounded-lg shadow-lg w-full h-auto object-cover" />
+    
+                <!-- Top-Left Badge -->
+                <div
+                    class="absolute -top-8 left-0 w-20 h-20 bg-white rounded-full border border-gray-300 shadow-lg overflow-hidden">
+                    <img src="./assets/images/rounded-image.png" alt="Badge" class="w-full h-full object-cover" />
+                </div>
+            </div>
+    
+            <!-- Right Section: Text Content -->
+            <div class="">
+                <!-- About Us Section -->
+                <div class="mb-8">
+                    <h5 class="text-black text-sm tracking-wider font-medium mb-2">About Us</h5>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-black leading-snug">
+                        Attorney Services Powered by Olubusayo Fasidi PC.
+                    </h2>
+                    <p class="text-gray-600 mt-4">
+                        To further our commitment to excellence and comprehensive service, EZ Immigration has partnered
+                        with Olubusayo Fasidi PC, a reputable Houston-based U.S. immigration law firm.
+                    </p>
+                    <p class="text-gray-600 mt-4">
+                        Olubusayo Fasidi PC prides itself on adopting a client-centric approach that ensures that each
+                        case is handled with the utmost care and personalized attention. Thanks to over 15 years of
+                        experience, the attorneys at Olubusayo Fasidi PC have a deep understanding of the U.S.
+                        immigration system and are equipped with the knowledge and skills to navigate any complex case.
+                    </p>
+                    <p class="text-gray-600 mt-4">
+                        This collaboration between EZ Immigration and Olubusayo Fasidi PC significantly enhances our
+                        ability to offer comprehensive immigration solutions. It ensures that our clients have access to
+                        top-rated immigration attorneys for full representation, covering an even wider range of
+                        immigration needs. Through this partnership, clients benefit from the combined expertise and
+                        resources of both entities and get tailored, effective, and efficient immigration strategies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="relative bg-black text-white py-16 px-6 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 bg-no-repeat bg-cover"
+            style="background-image: url('./assets/images/wave-pattern.png');"></div>
+
+        <!-- Content Section -->
+        <div class="relative container mx-auto text-center z-10 max-w-3xl">
+            <!-- Small Tagline -->
+            <h5 class="text-yellow-400 text-sm tracking-wide mb-2">Consultation</h5>
+
+            <!-- Main Title -->
+            <h2 class="text-3xl sm:text-4xl font-bold leading-tight">
+                Have a question about our services or need guidance on your immigration case?
+            </h2>
+
+            <!-- Subtitle -->
+            <p class="text-lg text-gray-300 mt-4">
+                Don't hesitate to reach out to us for a consultation with one of our attorneys.
+            </p>
+
+            <!-- Button -->
+            <div class="mt-8">
+                <a href="#"
+                    class="inline-block bg-yellow-400 text-black font-medium px-6 py-3 rounded-md shadow-md hover:bg-yellow-500">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="mt-10 mb-10 bg-white h-16"></div>
+
+    <section class="relative bg-black text-white py-16 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-no-repeat bg-cover"
+            style="background-image: url('./assets/images/wave-pattern.png');"></div>
+        <div class="relative container mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-around lg:items-start">
+                <!-- Left Section: Heading and Description -->
+                <div class="lg:w-1/2">
+                    <h2 class="text-2xl lg:text-3xl font-bold">Sign up for our newsletter</h2>
+                    <p class="text-lg text-gray-300 mt-4">
+                        We value building relationships with our clients and providing ongoing support throughout their
+                        immigration journey.
+                    </p>
+                </div>
+
+                <!-- Right Section: Form -->
+                <div class="">
+                    <div class="lg:w-full mt-6 lg:mt-0 flex flex-col lg:flex-row items-start lg:justify-end gap-4">
+                        <!-- Email Input -->
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full md:w-1/2 lg:w-full px-6 py-3 text-gray-900 rounded-md border border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500" />
+
+                        <!-- Subscribe Button -->
+                        <button
+                            class="px-6 py-3 bg-yellow-500 text-black font-medium rounded-md shadow hover:bg-yellow-600 w-full lg:w-auto">
+                            Subscribe
+                        </button>
+                    </div>
+                    <!-- Privacy Policy -->
+                    <div class="mt-4 text-gray-400 text-sm">
+                        We care about your data in our <a href="#"
+                            class="text-yellow-500 underline hover:no-underline">privacy policy</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 px-10 border-t border-gray-300">
+        <div class="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center">
+            <!-- Left Section: Logo and Description -->
+            <div class="lg:w-1/3 mb-8 lg:mb-0 text-left">
+                <img src="./assets/images/logo.png" alt="logo" class="h-20 w-34" />
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    EZ Immigration is a modern immigration platform offering immigration form preparation & review,
+                    attorney representation, DIY guides & more. Save money & time without sacrificing quality.
+                </p>
+            </div>
+
+            <!-- Center Section: Useful Links -->
+            <div class="lg:w-1/3 mb-8 lg:mb-0 text-left lg:text-center">
+                <h4 class="font-medium text-lg text-gray-800 mb-4">Useful Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="text-gray-700 hover:text-yellow-500">About Us</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-yellow-500">Immigration Services</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-yellow-500">Our Pricing Plans</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-yellow-500">Contact Us</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-yellow-500">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Section: Social Media -->
+            <div class="lg:w-1/3 text-left lg:text-left">
+                <h4 class="font-medium text-lg text-gray-800 mb-4">Follow Us</h4>
+                <div class="space-y-4">
+                    <a href="#"
+                        class="md:w-3/4 w-full flex items-center space-x-3 bg-black text-white py-2 px-3 rounded-full hover:bg-yellow-500 transition">
+                        <!-- Rounded Circle for Image -->
+                        <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <img src="./assets/images/facebook.png" alt="Facebook Logo" class="h-6 w-6" />
+                        </div>
+                        <!-- Text -->
+                        <span class="text-sm">Follow us on Facebook</span>
+                    </a>
+                    <a href="#"
+                        class="md:w-3/4 w-full flex items-center space-x-3 bg-black text-white py-2 px-3 rounded-full hover:bg-yellow-500 transition">
+                        <!-- Rounded Circle for Image -->
+                        <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <img src="./assets/images/instagram.png" alt="Facebook Logo" class="h-6 w-6" />
+                        </div>
+                        <!-- Text -->
+                        <span class="text-sm">Follow us on Instagram</span>
+                    </a>
+                    <a href="#"
+                        class="md:w-3/4 w-full flex items-center space-x-3 bg-black text-white py-2 px-3 rounded-full hover:bg-yellow-500 transition">
+                        <!-- Rounded Circle for Image -->
+                        <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <img src="./assets/images/mdi_linkedin.png" alt="Linkedin Logo" class="h-6 w-6" />
+                        </div>
+                        <!-- Text -->
+                        <span class="text-sm">Follow us on LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="border-t border-gray-300 mt-8 pt-4 text-center">
+            <p class="text-sm text-gray-600">
+                © 2024 EZ Immigration. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- js scripts -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
