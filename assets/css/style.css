@@ -1,0 +1,70 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+  }
+
+  nav {
+    background-color: #000;
+    /* padding: 1rem; */
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    position: relative; /* Required for dropdown positioning */
+    margin: 0 1rem;
+  }
+
+  nav ul li a {
+    color: #d1d5db; /* Tailwind's text-gray-300 */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #ffffff; /* Change text color on hover */
+  }
+
+  /* Dropdown Menu Styles */
+  nav ul li ul {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position below parent */
+    left: 0;
+    background-color: #374151; /* Tailwind's bg-gray-700 */
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  nav ul li ul li a {
+    padding: 0.5rem 1rem;
+    display: block;
+    white-space: nowrap; /* Prevent text wrapping */
+    color: #d1d5db; /* Tailwind's text-gray-300 */
+  }
+
+  nav ul li ul li a:hover {
+    background-color: #4b5563; /* Tailwind's bg-gray-600 */
+    color: #ffffff;
+  }
+
+  /* Show Dropdown on Hover */
+  nav ul li:hover ul {
+    display: block; /* Show dropdown */
+  }
+  .inline-block span {
+    transform: translateY(5px); /* Adjust to move the line further down */
+  }
