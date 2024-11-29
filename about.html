@@ -17,11 +17,11 @@
 </head>
 
 <body>
-    <nav class="text-white">
+    <nav class="text-black bg-white">
         <div class="container mx-auto flex items-center justify-between px-4 py-3">
             <!-- Logo -->
-            <a href="#" class="flex items-center">
-                <img src="./assets/images/logo.png" alt="logo" class="h-16 w-24" />
+            <a href="index.html" class="flex items-center">
+                <img src="./assets/images/logo.png" alt="logo" class="h-16 w-30" />
             </a>
 
             <!-- Mobile Toggle Button -->
@@ -38,10 +38,10 @@
             <div class="hidden lg:flex items-center w-full justify-center" id="navbarNav">
                 <ul class="flex space-x-8">
                     <li>
-                        <a href="#" class="text-gray-300 hover:text-white">Home</a>
+                        <a href="index.html" class="text-black hover:text-gray-300">Home</a>
                     </li>
                     <li class="relative group">
-                        <a href="#" class="text-gray-300 hover:text-white flex items-center">
+                        <a href="#" class="text-black hover:text-gray-300 flex items-center">
                             Our Services
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@
                             </svg>
                         </a>
                         <!-- Dropdown -->
-                        <ul class="absolute hidden group-hover:block bg-gray-800 text-gray-300 rounded shadow-lg mt-2">
+                        <ul class="absolute hidden group-hover:block bg-gray-800 text-gray-300 rounded shadow-lg">
                             <li>
                                 <a href="#" class="block px-4 py-2 hover:bg-gray-700">Visa Assistance</a>
                             </li>
@@ -63,23 +63,23 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="about.html" class="text-gray-300 hover:text-white">About Us</a>
+                        <a href="about.html" class="text-black hover:text-gray-300">About Us</a>
                     </li>
                     <li>
-                        <a href="#" class="text-gray-300 hover:text-white">Immigration Plans</a>
+                        <a href="#" class="text-black hover:text-gray-300">Immigration Plans</a>
                     </li>
                     <li>
-                        <a href="#" class="text-gray-300 hover:text-white">Resources</a>
+                        <a href="#" class="text-black hover:text-gray-300">Resources</a>
                     </li>
                     <li>
-                        <a href="#" class="text-gray-300 hover:text-white">DIY Kits</a>
+                        <a href="#" class="text-black hover:text-gray-300">DIY Kits</a>
                     </li>
                 </ul>
             </div>
 
             <!-- Contact Button -->
             <a href="#"
-                class="px-6 py-2 border border-white text-black font-medium rounded bg-white hover:bg-black hover:text-white lg:inline-block hidden whitespace-nowrap">
+                class="px-6 py-2 border border-black text-white font-medium rounded bg-black hover:bg-white hover:text-black lg:inline-block hidden whitespace-nowrap">
                 Contact Us
             </a>
         </div>
@@ -116,23 +116,28 @@
             <div class="py-10">
                 <div class="container mx-auto px-4">
                     <!-- Row -->
-                    <div class="flex space-x-4">
+                    <div class="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-4">
                         <!-- Left Column -->
-                        <div class="flex-1 p-6">
-                            <h1 class="text-4xl text-black font-semibold mb-4">EZ Immigration - About Us</h1>
+                        <div class="flex-1 md:p-6 p-0">
+                            <h1 class="text-4xl lg:text-5xl text-black font-semibold mb-4">EZ Immigration - About Us
+                            </h1>
                         </div>
 
                         <!-- Right Column -->
-                        <div class="flex-1 p-6">
-                            <p class="text-black font-light">EZ Immigration was founded with a simple yet ambitious goal
-                                - to break barriers and make US immigration more accessible and less frustrating for
-                                everyone involved. We are proud to have achieved great success in this.</p>
+                        <div class="flex-1 md:p-6 p-0">
+                            <p class="text-black font-light text-sm lg:text-base">
+                                EZ Immigration was founded with a simple yet ambitious goal - to break barriers and make
+                                US
+                                immigration more accessible and less frustrating for everyone involved. We are proud to
+                                have
+                                achieved great success in this.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </header>
+
     </section>
 
     <section class="bg-white text-black">
@@ -140,10 +145,10 @@
             <img src="./assets/images/consultation.png" alt="Immigration Family"
                 class="w-full h-[300px] object-cover" />
         </div>
-        <div class="container mx-auto px-2 max-w-10xl mt-10 pb-20 font-light">
+        <div class="container mx-auto px-4 md:px-2 max-w-10xl mt-10 md:p-6 p-0 pb-20 font-light">
             <div class="mb-12 pr-0">
                 <h5 class="text-sm tracking-wider">What We Do.</h5>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:gap-12 gap-0">
                     <div class="service-item pt-6">
                         <h1 class="text-2xl text-black font-semibold mb-4">Our services are designed in a way that
                             caters to the specific needs and requirements of each client without breaking the bank.
@@ -157,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:gap-0 gap-8">
                 <div class="service-item">
                     <h5 class="font-bold text-lg mb-2">Meticulous immigration paperwork preparation and review</h5>
                     <p class="text-gray-600">
@@ -303,14 +308,14 @@
                 <!-- Main Image -->
                 <img src="./assets/images/immigration-officer.png" alt="Main Image"
                     class="rounded-lg shadow-lg w-full h-auto object-cover" />
-    
+
                 <!-- Top-Left Badge -->
                 <div
                     class="absolute -top-8 left-0 w-20 h-20 bg-white rounded-full border border-gray-300 shadow-lg overflow-hidden">
                     <img src="./assets/images/rounded-image.png" alt="Badge" class="w-full h-full object-cover" />
                 </div>
             </div>
-    
+
             <!-- Right Section: Text Content -->
             <div class="">
                 <!-- About Us Section -->
@@ -340,7 +345,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="relative bg-black text-white py-16 px-6 overflow-hidden">
         <!-- Background Pattern -->
         <div class="absolute inset-0 bg-no-repeat bg-cover"
